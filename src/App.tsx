@@ -9,7 +9,7 @@ const lorumIpsum =
 
 function App() {
   return (
-    <div className="font-mono">
+    <div className="font-mono text-white">
       <Header />
       <div className="grid grid-cols-3 gap-5 p-10 ">
         <Card
