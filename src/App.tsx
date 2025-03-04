@@ -1,25 +1,27 @@
-import './App.css'
-import ReactLogo from './assets/react.svg'
+import "./App.css";
+import ReactLogo from "./assets/react.svg";
+import { Card } from "./components/Card";
+
+const lorumIpsum =
+  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
 
 function App() {
   return (
     <>
-      <div className="flex flex-col items-center p-7 rounded-2xl">
-        <div>    
-          <img className="size-48 shadow-xl rounded-md" alt="" src={ReactLogo} />  
-        </div>  
-        <div className="flex">    
-          <span>EXAMPLE</span>    
-          <span>The Anti-Patterns</span>    
-          <span className="flex">      
-            <span>No. 4</span>      
-            <span>·</span>      
-            <span>2025</span>    
-          </span>  
-        </div>
+      <div className="grid grid-cols-3 gap-5">
+        <Card
+          title="Portfolio"
+          description={lorumIpsum}
+          tags={[
+            {
+              title: "Hobby",
+            },
+          ]}
+          logo={ReactLogo}
+        />
       </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
