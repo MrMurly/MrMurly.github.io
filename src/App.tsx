@@ -9,7 +9,7 @@ function App() {
           <img className="size-48 shadow-xl rounded-md" alt="" src={ReactLogo} />  
         </div>  
         <div className="flex">    
-          <span>Class Warfare</span>    
+          <span>EXAMPLE</span>    
           <span>The Anti-Patterns</span>    
           <span className="flex">      
             <span>No. 4</span>      
