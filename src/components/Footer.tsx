@@ -2,8 +2,8 @@ import { GitHubIcon } from "../assets/github-icon";
 
 export const Footer = () => {
   return (
-    <div className=" h-64 w-screen border-t border-solid bg-black/20 p-15">
-      <div className="flex gap-50">
+    <div className="h-max w-screen border-t border-solid bg-black/20 p-15">
+      <div className="flex gap-50 max-lg:flex-col max-lg:gap-5">
         <div className="">
           <h3 className="font-bold text-2xl">Contact Info</h3>
           <p>Gustav Melefors</p>
