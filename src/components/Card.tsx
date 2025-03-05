@@ -1,24 +1,23 @@
+import { Project } from "../types/Project";
 import { Tag, TagProps } from "./Tag";
 
-export interface CardProps {
-  title: string;
-  description: string;
-  tags: Array<TagProps> | undefined;
-  logo: string;
-}
-
-export const Card = ({ title, description, tags, logo }: CardProps) => {
+export const Card = ({
+  title,
+  smallImage,
+  tags,
+  shortDescription,
+}: Project) => {
   return (
     <>
       <div className="rounded-md bg-cyan-900 flex flex-col justify-center p-5">
         <h3 className="text-center text-3xl font-bold capitalize">{title}</h3>
-        <img className="object-fill w-50 h-50 self-center" src={logo} />
+        <img className="object-fill w-50 h-50 self-center" src={smallImage} />
         <div className="flex flex-col gap-2 justify-center">
           <span className="max-w-100  font-extralight text-sm/snug">
-            {description}
+            {shortDescription}
           </span>
           <div className="flex flex-row flex-wrap max-w-100 gap-2 justify-between">
-            {tags?.map((tag, i) => <Tag {...tag} key={i} />)}
+            {tags?.map((tag, i) => <Tag title={tag} key={i} />)}
           </div>
         </div>
       </div>
