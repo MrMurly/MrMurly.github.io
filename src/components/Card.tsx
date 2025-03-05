@@ -1,5 +1,5 @@
 import { Project } from "../types/Project";
-import { Tag, TagProps } from "./Tag";
+import { Tag } from "./Tag";
 
 export const Card = ({
   title,
