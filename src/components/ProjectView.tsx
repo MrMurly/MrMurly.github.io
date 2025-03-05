@@ -16,6 +16,27 @@ export const ProjectView = () => {
       tags: ["Hobby"],
       technologies: ["React", "Typescript", "Vite", "Tailwind CSS"],
     },
+    {
+      title: "Portfolio",
+      shortDescription: lorumIpsum,
+      smallImage: ReactLogo,
+      tags: ["Hobby"],
+      technologies: ["React", "Typescript", "Vite", "Tailwind CSS"],
+    },
+    {
+      title: "Portfolio",
+      shortDescription: lorumIpsum,
+      smallImage: ReactLogo,
+      tags: ["Hobby"],
+      technologies: ["React", "Typescript", "Vite", "Tailwind CSS"],
+    },
+    {
+      title: "Portfolio",
+      shortDescription: lorumIpsum,
+      smallImage: ReactLogo,
+      tags: ["Hobby"],
+      technologies: ["React", "Typescript", "Vite", "Tailwind CSS"],
+    },
   ]);
 
   const [searchTerm, setSearchTerm] = useState("");
@@ -28,9 +49,7 @@ export const ProjectView = () => {
       <div className="w-full flex justify-center mt-5">
         <SearchBar search={search} />
       </div>
-      <div className="grid grid-cols-3 gap-5 p-10 max-sm:grid-cols-1 max-md:grid-cols-2">
-        <FilteredProjectList projects={projects} searchTerm={searchTerm} />
-      </div>
+      <FilteredProjectList projects={projects} searchTerm={searchTerm} />
     </>
   );
 };
