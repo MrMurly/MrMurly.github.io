@@ -54,7 +54,7 @@ export const ProjectView = () => {
   ]);
 
   return (
-    <div className="flex justify-center w-3/4 m-auto flex-col content-center mt-5">
+    <div className="mb-5">
       <SectionTitle
         title={"projects"}
         subTitle={"Here is some work I have done"}
