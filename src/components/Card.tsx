@@ -1,6 +1,6 @@
 import { Project } from "../types/Project";
 import { Tag } from "./Tag";
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 
 export const Card = ({
   title,

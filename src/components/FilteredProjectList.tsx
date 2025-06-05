@@ -8,7 +8,7 @@ interface props {
 
 export const FilteredProjectList = ({ projects, searchTerm }: props) => {
   return (
-    <div className="flex w-lg-3/4  flex-row flex-wrap p-5 gap-5 justify-center">
+    <div className="flex flex-row flex-wrap p-5 gap-5 justify-center">
       {projects.map((project) => {
         if (
           project.tags?.filter((tag) =>
