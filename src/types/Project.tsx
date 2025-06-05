@@ -6,4 +6,6 @@ export type Project = {
   longDescription?: string;
   tags: Array<string>;
   technologies: Array<string>;
+  dateStarted?: Date;
+  projectLink?: string;
 };
