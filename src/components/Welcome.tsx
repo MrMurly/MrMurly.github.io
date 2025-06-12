@@ -1,6 +1,6 @@
 export const Welcome = () => {
   return (
-    <div className="h-screen flex">
+    <div className="h-[80vh] flex">
       <div className="max-w-200 max-h-50 text-wrap   m-auto">
         <h3 className="text-4xl text-center lg:text-left mb-3">
           Hi! I'm

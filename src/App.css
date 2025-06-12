@@ -1,7 +1,16 @@
 @import "tailwindcss";
 
 body {
-  background-color: var(--color-gray-800);
+  background-color: var(--color-);
+}
+
+.parallax {
+  background: url("background.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
 }
 
 /* Cursor */
