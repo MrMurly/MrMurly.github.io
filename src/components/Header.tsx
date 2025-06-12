@@ -1,5 +1,4 @@
 import { NavItem } from "./NavItem.tsx";
-import { GitHubIcon } from "./icons/github-icon.tsx";
 
 export const Header = () => {
   return (
