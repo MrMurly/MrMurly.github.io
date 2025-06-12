@@ -13,10 +13,10 @@ export const NavItem = ({ title, scrollTarget }: props) => {
   };
 
   return (
-    <div onClick={onClick}>
-      <a href="#projects">
+    <button onClick={onClick} className="hover:text-white/50">
+      <a href={`#${title}`}>
         <h1 className="text-2xl">{title}</h1>
       </a>
-    </div>
+    </button>
   );
 };
