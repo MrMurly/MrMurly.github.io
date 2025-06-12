@@ -54,7 +54,7 @@ export const ProjectView = () => {
   ]);
 
   return (
-    <div className="mb-5">
+    <div className="mb-5" id="projects-scroll">
       <SectionTitle
         title={"projects"}
         subTitle={"Here is some work I have done"}

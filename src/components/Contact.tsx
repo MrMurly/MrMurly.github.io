@@ -2,7 +2,7 @@ import { SectionTitle } from "./SectionTitle";
 
 export const Contact = () => {
   return (
-    <div className="mb-5">
+    <div className="mb-5" id="contact-scroll">
       <SectionTitle title={"contact"} />
       <div className="ml-15">
         <p>Gustav Melefors</p>
