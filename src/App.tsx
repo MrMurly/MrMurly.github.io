@@ -7,7 +7,7 @@ import { Welcome } from "./components/Welcome";
 
 function App() {
   return (
-    <div className="font-mono text-white parallax">
+    <div className="font-mono text-white parallax sm:fixed">
       <Header />
       <div className="flex justify-center w-5/6 m-auto flex-col content-center mt-5">
         <Welcome />

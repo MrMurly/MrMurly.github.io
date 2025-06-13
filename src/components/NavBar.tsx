@@ -29,7 +29,7 @@ export const Navbar = ({ children }: PropsWithChildren) => {
           </div>
         </div>
       ) : (
-        <div>{children}</div>
+        <div className="flex flex-row gap-3">{children}</div>
       )}
     </div>
   );
