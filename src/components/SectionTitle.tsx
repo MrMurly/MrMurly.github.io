@@ -1,5 +1,5 @@
 import { useRef } from "react";
-import useOnScreen from "../hooks/isVisible";
+import useOnScreen from "../hooks/useOnScreen";
 
 interface props {
   title: String;

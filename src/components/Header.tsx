@@ -1,3 +1,4 @@
+import { Navbar } from "./NavBar.tsx";
 import { NavItem } from "./NavItem.tsx";
 
 export const Header = () => {
@@ -8,8 +9,10 @@ export const Header = () => {
           <h3 className="text-4xl">Gustav Melefors</h3>
         </div>
         <div className="flex gap-10">
-          <NavItem title={"Projects"} scrollTarget={"projects-scroll"} />
-          <NavItem title={"Contact"} scrollTarget={"contact-scroll"} />
+          <Navbar>
+            <NavItem title={"Projects"} scrollTarget={"projects-scroll"} />
+            <NavItem title={"Contact"} scrollTarget={"contact-scroll"} />
+          </Navbar>
         </div>
       </div>
     </div>
