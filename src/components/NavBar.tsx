@@ -15,14 +15,18 @@ export const Navbar = ({ children }: PropsWithChildren) => {
         <div id="menuToggle">
           <button
             onClick={handleMenuClick}
-            className={`cursor-pointer ${openMenu ? "open" : ""}`}
+            className={`py-2 cursor-pointer ${openMenu ? "open" : ""}`}
           >
             <span></span>
             <span></span>
             <span></span>
           </button>
 
-          <div className="hidden">{children}</div>
+          <div
+            className={`${openMenu ? "right-0" : "-right-full"} absolute py-3  top-[101%] backdrop-blur-sm w-[50vw] h-fit slide-in border-l-1 border-b-1 border-amber-50`}
+          >
+            <div className="flex gap-5 flex-col justify-start">{children}</div>
+          </div>
         </div>
       ) : (
         <div>{children}</div>

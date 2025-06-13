@@ -87,3 +87,7 @@ body {
     border-right-color: transparent;
   }
 }
+
+.slide-in {
+  transition: 1s;
+}
