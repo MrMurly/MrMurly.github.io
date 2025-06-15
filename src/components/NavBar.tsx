@@ -12,7 +12,7 @@ export const Navbar = ({ children }: PropsWithChildren) => {
   return (
     <div>
       {isMobile ? (
-        <div id="menuToggle">
+        <div id="menuToggle" className="">
           <button
             onClick={handleMenuClick}
             className={`py-2 cursor-pointer ${openMenu ? "open" : ""}`}
@@ -23,7 +23,7 @@ export const Navbar = ({ children }: PropsWithChildren) => {
           </button>
 
           <div
-            className={`${openMenu ? "right-0" : "-right-full"} absolute py-3  top-[101%] backdrop-blur-sm w-[50vw] h-fit slide-in border-l-1 border-b-1 border-amber-50`}
+            className={`${openMenu ? "absolute" : "hidden"} right-0 py-3  top-[101%] backdrop-blur-sm w-[50vw] h-fit slide-in border-l-1 border-b-1 border-amber-50`}
           >
             <div className="flex gap-5 flex-col justify-start">{children}</div>
           </div>
