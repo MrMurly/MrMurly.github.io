@@ -1,11 +1,7 @@
 import { useState } from "react";
-import ReactLogo from "../assets/react.svg";
 import { Project } from "../types/Project";
 import { Card } from "./Card";
 import { SectionTitle } from "./SectionTitle";
-
-const lorumIpsum =
-  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.";
 
 export const ProjectView = () => {
   const [projects, _] = useState<Array<Project>>([

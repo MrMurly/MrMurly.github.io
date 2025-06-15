@@ -7,8 +7,9 @@ export const Card = ({
   smallImage,
   tags,
   shortDescription,
+  projectLink,
 }: Project) => {
-  const cardRef = useRef<HTMLDivElement>(null);
+  const cardRef = useRef<HTMLAnchorElement>(null);
   const rotateRef = useRef({ x: 0, y: 0 });
   const animationFrame = useRef<number | null>(null);
 
@@ -16,7 +17,7 @@ export const Card = ({
     "perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1,1,1)",
   );
 
-  const onMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
+  const onMouseMove = (e: React.MouseEvent<HTMLAnchorElement>) => {
     const card = cardRef.current;
     if (!card) return;
 
@@ -51,7 +52,9 @@ export const Card = ({
   };
 
   return (
-    <div
+    <a
+      href={projectLink}
+      target="_blank"
       ref={cardRef}
       onMouseMove={onMouseMove}
       onMouseLeave={onMouseLeave}
@@ -75,6 +78,6 @@ export const Card = ({
             .map((tag, i) => <Tag title={tag} key={i} />)}
         </div>
       </div>
-    </div>
+    </a>
   );
 };
