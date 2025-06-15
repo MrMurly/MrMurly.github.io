@@ -1,10 +1,26 @@
-import { useState } from "react";
 import { Project } from "../types/Project";
 import { Card } from "./Card";
 import { SectionTitle } from "./SectionTitle";
 
 export const ProjectView = () => {
-  const [projects, _] = useState<Array<Project>>([
+  const projects: Array<Project> = [
+    {
+      title: "Thesis Project",
+      dateEnded: new Date("2025-06-12"),
+      dateStarted: new Date("2025-02-01"),
+      shortDescription:
+        "Find your way out. A 3D survival exergame made in Godot.",
+      smallImage: "https://i.imgur.com/CYhPL1u.jpeg",
+      tags: ["Godot 3D", "MediaPipe", "Exergame"],
+    },
+    {
+      title: "New Portfolio Website",
+      shortDescription:
+        "An updated website using Github Pages as a hosting service in order to have free hosting for a static website. Uses github actions for continous deployment.",
+      tags: ["Github Pages", "React", "Tawilwind", "TS", "Github Actions"],
+      smallImage: "https://i.imgur.com/kJtLzbu.png",
+      projectLink: "https://github.com/MrMurly/MrMurly.github.io",
+    },
     {
       title: "ZombieSurvivors",
       dateEnded: new Date("2022-11-14"),
@@ -20,7 +36,7 @@ export const ProjectView = () => {
     },
 
     {
-      title: "old portfolio website",
+      title: "Old portfolio website",
       dateStarted: new Date("2022-12-25"),
       dateEnded: new Date("2024-03-03"),
       projectLink: "https://github.com/MrMurly/portfolio",
@@ -53,7 +69,7 @@ export const ProjectView = () => {
         "https://media.geeksforgeeks.org/wp-content/cdn-uploads/20190902124355/ruby-programming-language.png",
       tags: ["Ruby", "Lexer", "Parser", "rd-parse", "pair-programming"],
     },
-  ]);
+  ];
 
   return (
     <div className="mb-5" id="projects-scroll">
