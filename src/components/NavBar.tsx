@@ -10,7 +10,7 @@ export const Navbar = ({ children }: PropsWithChildren) => {
   };
 
   return (
-    <div>
+    <>
       {isMobile ? (
         <div id="menuToggle" className="">
           <button
@@ -29,8 +29,8 @@ export const Navbar = ({ children }: PropsWithChildren) => {
           </div>
         </div>
       ) : (
-        <div className="flex flex-row gap-3">{children}</div>
+        <div className="flex flex-row gap-10 mr-15 my-auto">{children}</div>
       )}
-    </div>
+    </>
   );
 };

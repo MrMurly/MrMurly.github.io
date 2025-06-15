@@ -55,24 +55,24 @@ export const Card = ({
       ref={cardRef}
       onMouseMove={onMouseMove}
       onMouseLeave={onMouseLeave}
-      className="shadow-xl shadow-cyan-900/50 h-100 card rounded-md bg-cyan-900 flex flex-col justify-center p-5 w-75 group transition-all will-change-transform truncate"
+      className="shadow-xl shadow-cyan-900/50 min-h -100 card rounded-md bg-black/50 flex flex-col justify-start p-5 w-75 group transition-all will-change-transform truncate"
       style={{
         transform: transformStyle,
         transition: "transform 400ms cubic-bezier(0.03, 0.98, 0.52, 0.99)",
       }}
     >
-      <h3 className="text-center text-3xl font-bold capitalize">{title}</h3>
-      <img
-        className="object-fill w-50 h-50 self-center"
-        src={smallImage}
-        alt={title}
-      />
+      <h3 className="text-wrap text-center text-3xl font-bold capitalize">
+        {title}
+      </h3>
+      <img className="object-cover self-center" src={smallImage} alt={title} />
       <div className="flex-col gap-2 justify-center flex">
-        <span className="max-w-100 font-extralight text-sm/snug text-wrap">
+        <span className="mt-5 max-w-100 font-extralight text-sm/snug text-wrap">
           {shortDescription}
         </span>
         <div className="flex-row flex-wrap max-w-100 gap-2 justify-between flex">
-          {tags?.map((tag, i) => <Tag title={tag} key={i} />)}
+          {tags
+            ?.sort((a, b) => a.length - b.length)
+            .map((tag, i) => <Tag title={tag} key={i} />)}
         </div>
       </div>
     </div>

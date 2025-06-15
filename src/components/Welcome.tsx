@@ -1,7 +1,7 @@
 export const Welcome = () => {
   return (
     <div className="h-screen flex">
-      <div className="max-w-200 max-h-50 text-wrap   mx-auto mt-40">
+      <div className="max-w-200 max-h-50 text-wrap   mx-auto mt-40 lg:mt-80">
         <h3 className="text-4xl text-center lg:text-left mb-3">
           Hi! I'm
           <br className="inline lg:hidden" /> Gustav Melefors

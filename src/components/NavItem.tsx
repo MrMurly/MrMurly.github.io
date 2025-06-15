@@ -15,7 +15,7 @@ export const NavItem = ({ title, scrollTarget }: props) => {
   return (
     <button onClick={onClick} className="hover:text-gray-400">
       <a href={`#${title}`}>
-        <h1 className="text-2xl">{title}</h1>
+        <h1 className="text-2xl uppercase">{title}</h1>
       </a>
     </button>
   );
